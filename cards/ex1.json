@@ -1,0 +1,147 @@
+{
+  "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Invoice needs review",
+      "weight": "Bolder",
+      "size": "Large",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Risk is unknown because evidence is limited; this invoice needs review.",
+      "wrap": true,
+      "spacing": "Small"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Vendor",
+          "value": "Kip Infra Oy"
+        },
+        {
+          "title": "Invoice number",
+          "value": "30300003236"
+        },
+        {
+          "title": "Transaction",
+          "value": "VENDBILL6275"
+        },
+        {
+          "title": "Amount",
+          "value": "229.96 (currency 1)"
+        },
+        {
+          "title": "Invoice date",
+          "value": "01.05.2026"
+        },
+        {
+          "title": "Due date",
+          "value": "05.05.2026"
+        },
+        {
+          "title": "Risk",
+          "value": "Unknown / 15"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Why this was flagged",
+      "weight": "Bolder",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "- Due date 05.05.2026 is before review date 2026-06-24.\n- Line item details are not present in this export, so description, quantity, unit price, and tax comparison could not be checked.",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Recommended checks",
+      "weight": "Bolder",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "- Confirm whether the invoice is still pending or already handled.\n- Review the source document or NetSuite bill lines before approving.",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Key missing fields",
+      "weight": "Bolder",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "- invoice_lines / line_items not present in export\n- cost center field not present in export\n- approver/reviewer field not present in export",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Line items summary",
+      "weight": "Bolder",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Line item details are not present in bill_example.json. Memo: Vuokra 05/2026 Kokkola. Available totals: net 183.24, tax 46.72.",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "comment",
+      "placeholder": "Add comment",
+      "isMultiline": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "owner",
+      "placeholder": "Assign owner"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Approve",
+      "data": {
+        "action": "approve",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Needs clarification",
+      "data": {
+        "action": "needs_clarification",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Assign owner",
+      "data": {
+        "action": "assign_owner",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    }
+  ]
+}

@@ -1,0 +1,580 @@
+{
+  "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "verticalContentAlignment": "Center",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "!",
+              "color": "Attention",
+              "size": "ExtraLarge",
+              "weight": "Bolder",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "verticalContentAlignment": "Center",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Invoice needs review",
+              "weight": "Bolder",
+              "size": "Large",
+              "wrap": true,
+              "spacing": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "spacing": "Medium",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Vendor",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "Kip Infra Oy",
+              "weight": "Bolder",
+              "wrap": true,
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Invoice number",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "30300003236",
+              "weight": "Bolder",
+              "wrap": true,
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Amount",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "229.96 EUR",
+              "weight": "Bolder",
+              "wrap": true,
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Due date",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "5 May 2026",
+              "weight": "Bolder",
+              "wrap": true,
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Risk",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "Container",
+              "style": "attention",
+              "bleed": false,
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Unknown 15",
+                  "weight": "Bolder",
+                  "horizontalAlignment": "Center",
+                  "spacing": "None",
+                  "wrap": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Why this was flagged",
+      "weight": "Bolder",
+      "color": "Attention",
+      "spacing": "Medium",
+      "separator": true,
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "- Due date 05.05.2026 is before review date 2026-06-24.\n- Line item details are not present in this export, so description, quantity, unit price, and tax comparison could not be checked.",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Recommended checks",
+      "weight": "Bolder",
+      "color": "Accent",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "- Confirm whether the invoice is still pending or already handled.\n- Review the source document or NetSuite bill lines before approving.",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Invoice highlights",
+      "weight": "Bolder",
+      "color": "Accent",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Reference",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "02105",
+              "weight": "Bolder",
+              "spacing": "None",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Bank",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "FI73 ... 1076",
+              "weight": "Bolder",
+              "spacing": "None",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Payment terms",
+              "isSubtle": true,
+              "size": "Small",
+              "wrap": true
+            },
+            {
+              "type": "TextBlock",
+              "text": "due 5 May 2026",
+              "weight": "Bolder",
+              "spacing": "None",
+              "wrap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Line items",
+      "weight": "Bolder",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "separator": false,
+          "spacing": "Small",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Line",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Description",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Qty",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Unit price",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Net",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "VAT %",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Gross",
+                  "size": "Small",
+                  "weight": "Bolder",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ColumnSet",
+          "separator": true,
+          "spacing": "Small",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "1",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Vuokra 05/2026 Kokkola",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "1",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "183.24",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "183.24",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "25.50%",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "229.96",
+                  "size": "Small",
+                  "weight": "Default",
+                  "wrap": true,
+                  "spacing": "None"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Detailed line rows were not present in the export, so this table uses memo and header totals only.",
+      "isSubtle": true,
+      "size": "Small",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Key missing fields",
+      "weight": "Bolder",
+      "spacing": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "- invoice_lines / line_items not present in export\n- cost center field not present in export\n- approver/reviewer field not present in export",
+      "wrap": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "comment",
+      "placeholder": "Add comment",
+      "isMultiline": true
+    },
+    {
+      "type": "Input.Text",
+      "id": "owner",
+      "placeholder": "Assign owner"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Approve",
+      "style": "positive",
+      "data": {
+        "action": "approve",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Needs clarification",
+      "style": "default",
+      "data": {
+        "action": "needs_clarification",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Decline",
+      "style": "destructive",
+      "data": {
+        "action": "decline",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Assign owner",
+      "data": {
+        "action": "assign_owner",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Open in NetSuite",
+      "data": {
+        "action": "open_in_netsuite",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Add comment",
+      "data": {
+        "action": "add_comment",
+        "record_type": "vendorbill",
+        "record_id": 317128,
+        "tranid": "30300003236",
+        "vendor_id": 4150
+      }
+    }
+  ]
+}
